@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../static/css/main.css">
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+    
+</style>
+<body>
+  <div class="container-fluid"  >
+    <div class="card" style=" background-color: aliceblue; margin-top: 20px; ">
+      <div class="row" style="height: 100%;">
+        <div class="col-lg-2" style="height: 100%;">
+          <div class="card pb-5 " style="width: 100%; background-color:#282C2F;">
+            <div class="row" style="margin-left: 10px;">
+              <div class="row">
+                <!-- patient details -->
+                <div class="card mb-3" style="background-color: rgb(255, 255, 255);height: 300px;margin-top: 8px;margin-left: 1px;">
+                  <h5 class="my-3 text-center" style="color: #036daa;font-weight: 750;font-family: 'Nunito', sans-serif;">Patient Details</h5>
+                  <h5 class="text-center" style="font-size: 17px; margin-top: 10px; font-family: 'Nunito', sans-serif;color: #036daa;">
+                    <span style="font-weight: bold;">Patient Name:</span> <span >Jonathan</span>
+                  </h5>
+                  <h5 class="text-center" style="font-size: 17px; margin-top: 10px; font-family: 'Nunito', sans-serif;color: #036daa;">
+                    <span style="font-weight: bold;">Contact :</span> <span > 4674487367</span>
+                  </h5>
+                  <h5 class="text-center" style="font-size: 17px; margin-top: 10px; font-family: 'Nunito', sans-serif;color: #036daa;">
+                    <span style="font-weight: bold;">Age :</span> <span >34 yrs</span>
+                  </h5>
+                  <h5 class="text-center" style="font-size: 17px; margin-top: 10px; font-family: 'Nunito', sans-serif;color: #036daa;">
+                    <span style="font-weight: bold;">Blood Group :</span> <span >A+</span>
+                  </h5>
+                  <h5 class="text-center" style="font-size: 17px; margin-top: 10px; font-family: 'Nunito', sans-serif;color: #036daa;">
+                    <span style="font-weight: bold;">Diagnosis:</span> <span>Vertebro plasty</span>
+                  </h5>
+                  
+                </div>
+
+                <!-- patient details -->
+              </div>
+              <!-- timer -->
+              <div class="row" style="margin-top: 40px; padding-top: 10px;">
+                <h5 class="my-3 text-center" style="color: #036daa;font-weight: 750;font-family: 'Nunito', sans-serif;font-size: 23px;">CURRENT TIME</h5>
+                <div id="currentTime" class="card shadow border-0" style="background-color: black;">
+                  <h5 class="my-3 text-center" style="color: #1DEC19;font-weight: 750;font-family: 'Nunito', sans-serif;font-size: 45px;">00 : 00 : 00</h5>
+                </div>
+              </div>
+             
+              <div class="row" style="margin-top: 50px;">
+                <h5 class="my-3 text-center" style="color: #036daa;font-weight: 750;font-family: 'Nunito', sans-serif;font-size: 23px;">ANASTHESIA TIME</h5>
+                <div class="card shadow border-0" style="background-color: black;">
+                <h5 class="my-3 text-center" style="color: #FF0000;font-weight: 750;font-family: 'Nunito', sans-serif;font-size: 40px;">00 : 00 : 00</h5>
+                </div>
+              </div>
+              <br>
+              <div class="row" style="margin-top: 50px;">
+                <h5 class="my-3 text-center" style="color: #036daa;font-weight: 750;font-family: 'Nunito', sans-serif;font-size: 23px;">ELAPSED TIME</h5>
+                <div class="card shadow border-0" style="background-color: black;">
+                <h5 class="my-3 text-center" style="color: #036daa;font-weight: 750;font-family: 'Nunito', sans-serif;font-size: 40px;">00 : 00 : 00</h5>
+                </div>
+              </div>
+            <!-- timer -->
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <!-- Content for the second column -->
+         
+          
+          <div class="row">
+            <div class="col">
+              <div class="card shadow border-0" style="margin-right: 30px;  margin-top: 20px;">
+                <h5 class="my-3 text-center" style="color: #036daa; font-weight: 750; font-family: 'Nunito', sans-serif; font-size: 25px;">Patient Report</h5>
+            
+                <!-- Carousel -->
+                <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+                  <!-- Slides -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="../static/img/thoracic-spine-x-ray-2x.webp" class="d-block w-100" alt="Image 1" style="object-fit: cover;">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../static/img/thoracic-spine-x-ray-2x.webp" class="d-block w-100" alt="Image 2" style="object-fit: cover;">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../static/img/thoracic-spine-x-ray-2x.webp" class="d-block w-100" alt="Image 3" style="object-fit: cover;">
+                    </div>
+                    <!-- Add more carousel items for additional images -->
+                  </div>
+            
+                  <!-- Controls -->
+                  <a class="carousel-control-prev" href="#imageCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#imageCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </a>
+                </div>
+                
+              </div>
+              <br>
+              <!-- buttons -->
+              <div class="d-flex justify-content-end p-3">
+                <button class="btn btn-primary " type="submit" style="margin-right: 15px;font-family: 'Nunito', sans-serif;">Stroke</button>
+                <button class="btn btn-primary " type="submit" style="margin-right: 15px;font-family: 'Nunito', sans-serif;">Clear</button>
+                <button class="btn btn-primary" type="submit" style="margin-right: 15px;font-family: 'Nunito', sans-serif;">Save</button>
+              </div>
+              <!-- buttons -->
+            </div>
+            
+            
+            
+
+          <!-- temp hum -->
+
+          <div class="row" style=" padding-left: 40px;">
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="card shadow border-0" style="height: 90px; width: 150px; margin-top: 20px;">
+                <h5 class="my-3 text-center" style="color: #036daa; font-weight: 750; font-family: 'Nunito', sans-serif;font-size: 18px; ">Temperature</h5>
+                <span class="text">
+                  <img src="../static/img/thermometer (1).png " style="height: 35px; width: 35px; margin-left: 10px;margin-top: -12px;">
+                  <span style="display: inline-block; margin-left: 30px;font-size: 20px;color: #0086d3;font-weight: 600;font-family: 'Nunito', sans-serif;">{{temp}}</span>
+                </span>
+
+                <!-- Content for the first box -->
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="card shadow border-0" style="height: 90px; width: 150px; margin-top: 20px;">
+                <h5 class="my-3 text-center" style="color: #036daa; font-weight: 750; font-family: 'Nunito', sans-serif;font-size: 18px; ">Humidity</h5>
+                <span class="text">
+                  <img src="../static/img/humidity.png" style="height: 38px; width: 38px; margin-left: 10px;margin-top: -12px;">
+                  <span style="display: inline-block; margin-left: 30px;font-size: 20px;color: #0086d3;font-weight: 600;font-family: 'Nunito', sans-serif;">{{hum}}</span>
+                </span>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="card shadow border-0" style="height: 90px; width: 150px; margin-top: 20px;">
+                <h5 class="my-3 text-center" style="color: #036daa; font-weight: 750; font-family: 'Nunito', sans-serif;font-size: 18px; ">Pressure</h5>
+                <span class="text">
+                  <img src="../static/img/icons8-pressure-gauge-96.png" style="height: 40px; width: 40px; margin-left: 10px;margin-top: -12px;">
+                  <span style="display: inline-block; margin-left: 30px;font-size: 20px;color: #0086d3;font-weight: 600;font-family: 'Nunito', sans-serif;">{{press}}</span>
+                </span>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="card shadow border-0" style="height: 90px; width: 150px; margin-top: 20px;">
+                <h5 class="my-3 text-center" style="color: #036daa; font-weight: 750; font-family: 'Nunito', sans-serif;font-size: 18px; "> N2O</h5>
+                <span class="text">
+                  <img src="../static/img/pressure-gauge.png" style="height: 35px; width: 35px; margin-left: 10px;margin-top: -12px;">
+                  <span style="display: inline-block; margin-left: 30px;font-size: 20px;color: #0086d3;font-weight: 600;font-family: 'Nunito', sans-serif;">{{n2o}}</span>
+                </span>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="card shadow border-0" style="height: 90px; width: 150px; margin-top: 20px;">
+                <h5 class="my-3 text-center" style="color: #036daa; font-weight: 750; font-family: 'Nunito', sans-serif;font-size: 18px; ">O2</h5>
+                <span class="text">
+                  <img src="../static/img/oxygen-saturation.png" style="height: 45px; width: 45px; margin-left: 10px;margin-top: -15px;">
+                  <span style="display: inline-block; margin-left: 30px;font-size: 20px;color: #0086d3;font-weight: 600;font-family: 'Nunito', sans-serif;">{{o2}}</span>
+                </span>
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <div class="card shadow border-0" style="height: 90px; width: 150px; margin-top: 20px;">
+                <h5 class="my-3 text-center" style="color: #036daa; font-weight: 750; font-family: 'Nunito', sans-serif;font-size: 18px; ">Vaccum</h5>
+                <span class="text">
+                  <img src="../static/img/vaccum-cleaner.png" style="height: 40px; width: 40px; margin-left: 10px;margin-top: -15px;">
+                  <span style="display: inline-block; margin-left: 30px;font-size: 20px;color: #0086d3;font-weight: 600;font-family: 'Nunito', sans-serif;">{{vacuum}}</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          
+          
+          
+
+          <!-- tem hum -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    // CURRENT TIME 
+
+
+// Function to format time with leading zeros
+function formatTimeWithZeros(time) {
+  return time < 10 ? '0' + time : time;
+}
+
+// Function to update the current time display
+function updateCurrentTimeDisplay() {
+  var currentTimeElement = document.getElementById('currentTime');
+  var currentTime = new Date();
+  var hours = currentTime.getHours();
+  var minutes = currentTime.getMinutes();
+  var seconds = currentTime.getSeconds();
+  var formattedTime = formatTimeWithZeros(hours) + ' : ' + formatTimeWithZeros(minutes) + ' : ' + formatTimeWithZeros(seconds);
+  currentTimeElement.textContent = formattedTime;
+}
+
+// Update the current time immediately
+updateCurrentTimeDisplay();
+
+// Update the current time every second
+setInterval(updateCurrentTimeDisplay, 1000);
+  </script>
+  
+    </body>
+    
+    </html>
+            
+                              
+            
+                            
+                        
+                            
+                        
+                          
+                        
